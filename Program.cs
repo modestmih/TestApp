@@ -31,7 +31,7 @@ namespace ConsoleApp66
             _nameField = new TextBox();
             _sendName = new Button();
             _greetingLbl = new Label();
-            InitializeNameField(new Point(100, 100), new Size(222, 222), "Введите свое имя");
+            InitializeNameField(new Point(100, 100), new Size(222, 222), "Введите не свое имя");
             InitializeGreetingLabel(new Point(220, 110), new Size(100, 33), "");
             InitializeSendNameButton(new Point(40, 222), new Size(340, 202), "Отправьте");
             ActiveControl = _sendName;
