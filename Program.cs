@@ -23,10 +23,10 @@ namespace ConsoleApp66
             private event NameEntered _nameEntered;
 
         public MyForm(string title)
-        {
+        { 
             Text = title;
             Height = 500;
-            Width = 500;
+            Width= 700;
             FormBorderStyle = FormBorderStyle.None;
             _nameField = new TextBox();
             _sendName = new Button();
@@ -72,11 +72,14 @@ namespace ConsoleApp66
                 element.Location = location;
                 element.Size = size;
                 Controls.Add(element);
+
+            
             }
             private void ShowUserName(string username)
             {
                 _greetingLbl.Text = $"Приветсвую вас, {username}!";
                 _greetingLbl.Visible = true;
+
                 _nameField.Visible = false;
             }
         }
